@@ -17,7 +17,8 @@
     <div class="row section-body">
       <div class="col-md-4 footer-box">
         <div class="company_brand">{header.name}</div>
-        <p>{DESCRIPTION}</p>
+        <p>Product development accelerated by <a href='https://opensourcelabs.io/'>OSLabs</a>. Issues or concerns? Report them to our <a href='https://github.com/oslabs-beta/Ptero'>GitHub</a>,
+        </p>
       </div>
       <div class="col-md-4 footer-box">
         <p class="footer-title">{HEADING}</p>
