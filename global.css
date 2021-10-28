@@ -1,6 +1,9 @@
 /**public/global.css**/
 :root {
-	--gradient: linear-gradient(90deg, green 0%, lightgreen 100%);
+	/* --main: #292B2C; */
+	--main: #597e3a;
+	--support: #BDD975;
+	--gradient: linear-gradient(90deg, var(--main) 0%, var(--support) 100%);
 	--light: #fff;
 	--grey: #f8f9fa;
 }
@@ -32,4 +35,10 @@ body {
 
 .section-body {
 	padding: 20px 0;
+}
+
+h2 {
+	/* background-color: pink; */
+	font-weight: bold;
+
 }

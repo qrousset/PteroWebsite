@@ -7,7 +7,7 @@
 <section id="functionalities" class="section">
   <div class="container text-center">
     <h2 class="title">{HEADING}</h2>
-    <div class="row section-body">
+    <div class="row section-body" id='features'>
       {#each SERVICE_LIST as list}
         <div class="col-md-4 service">
           <img src={list.URL} alt={list.LABEL} class="service-img" />
@@ -16,20 +16,32 @@
         </div>
       {/each}
     </div>
-    <buttom class="btn btn-primary round-border main-bgcolor">
+    <img class='divider' src='images/divider.png'/>
+    <!-- <buttom class="btn btn-primary round-border main-bgcolor">
       {ALL_FUNCTIONALITIES}
-    </buttom>
+    </buttom> -->
   </div>
 </section>
 
 
 <style>
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .service {
+    min-width: 400px;
+  }
   .service-img {
-    width: 200px;
+    /* width: 300px; */
     height: 200px;
     margin-top: 20px;
   }
-
+  .divider {
+    width: 700px;
+    height: 50px;
+  }
   .service h4 {
     padding: 5px;
     margin-top: 25px;
@@ -37,12 +49,11 @@
   }
 
   .title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
-
   .title::before {
     content: "";
-    background: linear-gradient(90deg, green 0%, lightgreen 100%);
+    background: linear-gradient(90deg, var(--main) 0%, var(--support) 100%);
     height: 5px;
     width: 200px;
     margin-left: auto;
@@ -53,7 +64,7 @@
 
   .title::after {
     content: "";
-    background: linear-gradient(90deg, green 0%, lightgreen 100%);
+    background: linear-gradient(90deg, var(--main) 0%, var(--support) 100%);
     height: 10px;
     width: 50px;
     margin-left: auto;

@@ -7,7 +7,7 @@
 <section id="nav-bar">
   <nav class="navbar main-bgcolor navbar-expand-md navbar-dark">
     <a class="navbar-brand company_brand" href="/">
-      {header}
+      <img class="logo" src={header.img} alt={header.name}/>
     </a>
     <button
       class="navbar-toggler"
@@ -47,10 +47,16 @@
     padding: 0 0 0 20px;
   }
 
+  .navbar .logo {
+    /* background-color: pink; */
+    height: 100%;
+  }
+
   .navbar-nav li a {
     font-weight: 600;
     text-transform: uppercase;
     float: right;
     text-align: left;
+    
   }
 </style>
