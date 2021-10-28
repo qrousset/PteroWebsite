@@ -1,6 +1,6 @@
 <script>
   export let footerData = {};
-  export let header = "";
+  export let header;
   const {
     DESCRIPTION,
     CONTACT_DETAILS,
@@ -12,11 +12,11 @@
 
 
 <section class="main-bgcolor light-color" id="footer">
-  <img src="images/wave2.png" alt="" class="wave-img" />
+  <!-- <img src="images/quentin.png" alt="" class="wave-img" /> -->
   <div class="container">
     <div class="row section-body">
       <div class="col-md-4 footer-box">
-        <div class="company_brand">{header}</div>
+        <div class="company_brand">{header.name}</div>
         <p>{DESCRIPTION}</p>
       </div>
       <div class="col-md-4 footer-box">
@@ -25,10 +25,10 @@
           <i class="fas fa-map-marker-alt" />
           {ADDRESS}
         </p>
-        <p>
+        <!-- <p>
           <i class="fas fa-phone" />
           {MOBILE}
-        </p>
+        </p> -->
         <p>
           <i class="fas fa-envelope" />
           {EMAIL}

@@ -33,6 +33,10 @@
   section ul li {
     margin: 10px 0;
   }
+  .row {
+    align-items: center;
+    
+  }
 
   section ul {
     padding-left: 23px;

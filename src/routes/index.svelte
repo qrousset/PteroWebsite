@@ -12,6 +12,7 @@
   export const prerender = true;
 </script>
 
+<title>Ptero - Welcome to Ptero!</title>
 
 <Navbar navlists={DATA.NAVBAR_DATA} header={DATA.HEADER} />
 <Banner bannerData={DATA.BANNER_DATA}/>

@@ -1,84 +1,101 @@
 /**src/Data/data.js**/
-const HEADER = "PTERO";
+const HEADER = {
+  name: "PTERO",
+  img: "images/logoFull50px.png"
+};
 
 const NAVBAR_DATA = [
-  { id: 1, url: "/", label: "Home" },
+  // { id: 1, url: "/", label: "Home" },
   { id: 2, url: "#functionalities", label: "Functionalities" },
-  { id: 3, url: "#about-us", label: "About us" },
-  { id: 4, url: "#demo", label: "Demo" },
-  { id: 5, url: "#about-ptero", label: "Ptero" },
+  { id: 3, url: "#about-us", label: "Why Ptero" },
+  { id: 4, url: "#demo", label: "How does it work" },
+  { id: 5, url: "#about-ptero", label: "Download" },
   { id: 6, url: "#the-team", label: "The Team" },
   { id: 7, url: "#footer", label: "Contacts" },
 ];
 const BANNER_DATA = {
   HEADING: "Watch your Deno take off!",
   DECRIPTION:
-    "Ptero allows you to quickly implement a fast caching solution for your deno built RESTful API thanks to redis capabilities.",
+    "Ptero allows you to quickly implement a fast caching and logging solution for your deno built RESTful API.",
 };
 const FUNCTIONALITIES_DATA = {
   HEADING: "Functionalities",
   ALL_FUNCTIONALITIES: "All Functionalities",
   SERVICE_LIST: [
     {
-      LABEL: "API calls logging",
+      LABEL: "API call logging",
       DESCRIPTION:
-        "API calls logging API calls logging API calls logging API calls logging API calls logging API calls logging ",
-      URL: "images/service1.png",
+        "Ptero provides API logging middleware to keep track of the calls made to your RESTful API",
+      URL: "images/examples/logs.png",
     },
     {
       LABEL: "Redis Caching",
       DESCRIPTION:
-        "API calls logging API calls logging API calls logging API calls logging API calls logging API calls logging ",
-      URL: "images/service2.png",
+        "Buiilt in Redis caching support speeds up accessing your API by up to 1000%",
+      URL: "images/redislogo.png",
     },
     {
       LABEL: "Flexible monitoring",
       DESCRIPTION:
-        "API calls logging API calls logging API calls logging API calls logging API calls logging API calls logging ",
-      URL: "images/service3.png",
+        "The compainion PteroView app provides flexable viewing options for your logged data",
+      URL: "images/examples/webapp.png",
     },
   ],
 };
 
 const ABOUT_DATA = {
-  HEADING: "Why choose Ptero",
+  HEADING: "Why choose Ptero?",
   TITLE: "Why Ptero is different",
-  IMAGE_URL: "images/network.png",
+  IMAGE_URL: "images/gifs/webapp.gif",
   WHY_CHOOSE_US_LIST: [
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
-    "We qeqwe Coeqwesqweqw eEqwffeqwe qweqwe ctive qweeqwe adasd than Othwers.",
+    "Ptero utilize Redis caching to prevent identical RESTful API requested to server, allowing users to provide same data from a cache with faster response time.",
+    "Ptero provides needed support that was missing for Deno based APIs",
+    "Ptero's companion app, PteroView, allows API Hosts to visualize and manage metrics of all the API requests in their Deno built server.",
+    "Ptero helps developers be able to more easily anticipate their products popularity to provide targeted information.",
   ],
 };
 const DEMO_DATA = {
   HEADING: "How does it work?",
   DEMO_LIST: [
     {
-      DESCRIPTION:
-        "Deno has made a huge difference to our business with his good work and knowledge of SEO and business to business marketing techniques. Our search engine rankings are better than ever and we are getting more people contacting us thanks to Jomer’s knowledge and hard work.",
-      IMAGE_URL: "images/user1.jpg",
-      DESIGNATION: "Setup of the logging",
+      DESCRIPTION: "Within the Deno built server, import Ptero Deno module to allow Redis caching and logging of the requests. Then connect the server with MongoDB to store the information on users and request logs.",
+      IMAGE_URL: "images/examples/settings1.png",
+      DESIGNATION: "Redis Caching and Logging",
     },
     {
       DESCRIPTION:
-        " and his team have provided us with a comprehensive, fast and well planned digital marketing strategy that has yielded great results in terms of content, SEO, Social Media. His team are a pleasure to work with, as well as being fast to respond and adapt to the needs of your brand.",
-      IMAGE_URL: "images/user2.jpg",
-      DESIGNATION: "Setup of the caching",
+        "PteroView acts as a monitoring tool for your Ptero logs. This app allows for the interpertation and extrapolation of the data. It is open source so you can edit the app for your own use to show metric you desire",
+      IMAGE_URL: "images/examples/settings2.png",
+      DESIGNATION: "PteroView",
     },
   ],
 };
 
 const PTERO_SOCIAL_DATA = {
-  HEADING: "PTERO:",
-  PTERO_SOCIAL: [],
+  HEADING: "Getting Started:",
+  PTERO_SOCIAL: [{
+    name: "Deno Module", 
+    text: "",
+    link: "https://deno.land/x/ptero@deno.land",
+    image: "images/deno.png",
+  }, 
+  {
+    name: "PteroView", 
+    text: "Version Alpha",
+    link: "https://github.com/qrousset/ElectronPtero",
+    image: "favicon.png"
+  }, 
+  {
+    name: "Repository", 
+    text: "",
+    link: "https://github.com/oslabs-beta/Ptero",
+    image: "/images/github.png"
+  }
+],
 };
 
 const TEAM_SOCIAL_DATA = {
-  HEADING: "THE TEAM:",
+  HEADING: "Meet the Team:",
   MEMBER_LIST: [
     {
       name: "Quentin Rousset",
@@ -111,11 +128,10 @@ const TEAM_SOCIAL_DATA = {
 
 const FOOTER_DATA = {
   DESCRIPTION:
-    "We Work on different open source projects providing tools for developer to work faster.",
+    "Watch your Deno take off! Open source team providing tools for developer to work faster.",
   CONTACT_DETAILS: {
     HEADING: "Contact us",
-    ADDRESS: "NYC",
-    MOBILE: "no phone",
+    ADDRESS: "github.com/oslabs-beta/Ptero",
     EMAIL: "ptero.ts@gmail.com",
   },
   SUBSCRIBE_NEWSLETTER: "Subscribe newsletter",

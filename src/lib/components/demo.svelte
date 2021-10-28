@@ -1,4 +1,4 @@
-<script>
+  <script>
   export let demoData = {};
   const { HEADING, DEMO_LIST } = demoData;
 </script>
@@ -11,7 +11,7 @@
       {#each DEMO_LIST as list}
         <div class="col-md-5 testimonial">
           <p>{list.DESCRIPTION}</p>
-          <img src={list.IMAGE_URL} alt="" />
+          <img src='/images/examples/halfptero.png' alt="" />
           <p class="user-details">
             <br />
             {list.DESIGNATION}
@@ -22,23 +22,24 @@
   </div>
 </section>
 
-
+<!-- {list.IMAGE_URL} -->
 <style>
   .testimonial {
-    border-left: 4px solid lightgreen;
+    border-left: 4px solid var(--support);
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   .testimonial img {
     height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin: 0 10px;
+    width: 100px;
+    margin: 0 0px;
+    align-items: center;
   }
 
   .user-details {
     display: inline-block;
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-weight: bold;
   }
 </style>
