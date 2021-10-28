@@ -76,13 +76,13 @@ const PTERO_SOCIAL_DATA = {
   PTERO_SOCIAL: [{
     name: "Deno Module", 
     text: "",
-    link: "https://deno.land/x/ptero@deno.land",
+    link: "https://deno.land/x/ptero",
     image: "images/deno.png",
   }, 
   {
     name: "PteroView", 
     text: "Version Alpha",
-    link: "https://github.com/qrousset/ElectronPtero",
+    link: "https://github.com/oslabs-beta/Ptero/tree/Main/Client",
     image: "favicon.png"
   }, 
   {
@@ -128,7 +128,7 @@ const TEAM_SOCIAL_DATA = {
 
 const FOOTER_DATA = {
   DESCRIPTION:
-    "Watch your Deno take off! Open source team providing tools for developer to work faster.",
+    `Product development accelerated by OSLabs. Issues or concerns? Report them to our GitHub`,
   CONTACT_DETAILS: {
     HEADING: "Contact us",
     ADDRESS: "github.com/oslabs-beta/Ptero",

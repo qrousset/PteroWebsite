@@ -24,6 +24,10 @@
 
 <!-- {list.IMAGE_URL} -->
 <style>
+
+  #demo {
+    padding-top: var(--padding);
+  }
   .testimonial {
     border-left: 4px solid var(--support);
     margin-top: 10px;

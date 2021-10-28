@@ -25,6 +25,10 @@
 
 
 <style>
+  #about-us {
+    padding-top: var(--padding);
+  }
+  
   .about-title {
     margin-top: 8%;
     margin-bottom: 20px;
