@@ -34,6 +34,9 @@
 
 <!------------------------------------------->
 <style>
+	#main-bgcolor {
+    padding-top: var(--padding);
+  }
 	section {
 		padding-top: 5%;
 		position: relative;

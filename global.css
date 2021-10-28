@@ -6,6 +6,7 @@
 	--gradient: linear-gradient(90deg, var(--main) 0%, var(--support) 100%);
 	--light: #fff;
 	--grey: #f8f9fa;
+	--padding: 5em;
 }
 
 html,

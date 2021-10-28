@@ -51,6 +51,10 @@
 
 
 <style>
+  main-bgcolor {
+    padding-top: var(--padding);
+  }
+  
   .footer-title {
     font-weight: bold;
     text-transform: uppercase;

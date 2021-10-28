@@ -82,7 +82,7 @@ const PTERO_SOCIAL_DATA = {
   {
     name: "PteroView", 
     text: "Version Alpha",
-    link: "https://github.com/qrousset/ElectronPtero",
+    link: "https://github.com/oslabs-beta/Ptero/tree/Main/Client",
     image: "favicon.png"
   }, 
   {

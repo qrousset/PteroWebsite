@@ -25,6 +25,10 @@
 
 
 <style>
+  #functionalities {
+    padding-top: var(--padding);
+  }
+  
   #features {
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +43,7 @@
     margin-top: 20px;
   }
   .divider {
-    width: 700px;
+    width: 70%;
     height: 50px;
   }
   .service h4 {
